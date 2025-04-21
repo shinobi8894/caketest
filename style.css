@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #14151a;
+    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.text-container {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    z-index: 50;
+}
+
+.fade-text {
+    display: inline-block; /* Change to inline-block for character animation */
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px) translateX(15px) rotateX(-90deg); /* Start slightly lower and at 75 degrees */
+    margin: 0 2px; /* Add some spacing between characters */
+    color: white;
+    font-style: italic;
+}
+
+picture {
+    position: fixed;
+    width: 100%;
+}
+

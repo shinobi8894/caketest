@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="text-container" id="text-container">
+        <!-- Characters will be inserted here by JavaScript -->
+    </div>
+
+    <picture>
+        <source
+            data-srcset="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-xxs.png"
+            media="(max-width: 450px)"
+            srcset="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-xxs.png">
+        <source data-srcset="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-m.png"
+            media="(max-width: 815px)"
+            srcset="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-m.png">
+        <source data-srcset="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-l.png"
+            media="(max-width: 1030px)"
+            srcset="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-l.png">
+        <img data-src="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-xl.png"
+            class="js-lazy loaded" alt=""
+            src="https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/cases/background-xl.png"
+            data-was-processed="true">
+    </picture>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="animation.js"></script>
+</body>
+
+</html>
