@@ -20,7 +20,7 @@ chars.forEach((char, index) => {
         x: -25,
         rotationX: 0, // Rotate to standing position
         duration: 0.5,
-        delay: index * 0.02, // Start each character slightly earlier
+        delay: index * 0.03, // Start each character slightly earlier
         ease: "power2.out",
         start: { 
             rotationX: -90, // Start from 75 degrees
